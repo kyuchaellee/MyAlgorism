@@ -4,11 +4,15 @@ public class Bubble_Sort {
 	public static void BubbleSort(int[] arr) {
 		int i, j;
 		for (i = 0; i < arr.length; i++) {
-			for (j = 0; j < arr.length - 1; j++) { // Ã³À½ºÎÅÍ ¹è¿­¾Õ±îÁö ¼øÈ¸ÇÒ point
+			for (j = 0; j < arr.length - 1; j++) { // Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½Õ±ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½ï¿½ point
 				if (j + 1 < arr.length && arr[j] > arr[j + 1]) {
-					arr[j] = arr[j] + arr[j + 1]; // ÀÎÁ¢ °ª Ã¼ÀÎÁö
-					arr[j + 1] = arr[j] - arr[j + 1];
-					arr[j] = arr[j] - arr[j + 1];
+//					int tmp = 0;
+//					tmp = arr[j];
+//					arr[j]=arr[i];
+//					arr[i]=tmp;
+					 arr[j] = arr[j] + arr[j + 1]; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã¼ï¿½ï¿½ï¿½ï¿½
+					 arr[j + 1] = arr[j] - arr[j + 1];
+					 arr[j] = arr[j] - arr[j + 1];
 				}
 			}
 
