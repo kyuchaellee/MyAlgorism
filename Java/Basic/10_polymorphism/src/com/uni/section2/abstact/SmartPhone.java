@@ -1,0 +1,16 @@
+package com.uni.section2.abstact;
+
+/* extends 키워드로 클래스를 상속받을 때 두 개 이상의 클래스는 상속하지 못한다. (모호성 제거)(단일상속)
+ * 추상클래스가 가지는 추상 메소드를 반드시 오버라이딩 해야 한다. (강제성 부여) */
+public class SmartPhone extends Product {  //단일 상속
+
+	@Override
+	public void abstMethod() {
+		System.out.println("Product 클래스의 absMethod를 오바라이딩한 메소드");
+	}
+	
+	public void printSmartPhone() {
+		System.out.println("프린트스마트폰 메소드 호출");
+	}
+
+}
