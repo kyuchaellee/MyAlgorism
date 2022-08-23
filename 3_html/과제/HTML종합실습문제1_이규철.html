@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <label>고객명 : </label>
+        <input type="text" id = "gogakname"name="gogak"><br>
+        <br>
+        <label>전화번호 : </label>
+        <input type = "tel" id ="gogakphone"name = "gogak"  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+        <br>
+        <label>이메일 : </label>
+        <input type = "email" id="gogakemail" name = "gogak" ><br>
+
+        <fieldset style="width: 500px;">
+            <legend>피자 사이즈</legend>
+            <label><input type="radio" id="small" name="pizzasize" value="small">Small</label><br>
+            <br>
+            <label><input type="radio" id="medium" name="pizzasize" value="Medium">Medium</label><br>
+            <br>
+            <label><input type="radio"id="large"name="pizzasize" value="Large">Large</label><br>
+        </fieldset>
+
+        <fieldset style="width: 500px;">
+            <legend>토핑 선택</legend>
+            <label><input type="checkbox"id="baec"name="topping"value="B">베이컨</label><br>
+            <br>
+            <label><input type="checkbox"id="cheese"name="topping"value="C">치즈</label><br>
+            <br>
+            <label><input type="checkbox"id="onion"name="topping"value="O">양파</label><br>
+            <br>
+            <label><input type="checkbox"id="mush"name="topping"value="M">버섯</label><br>
+        </fieldset>
+
+        <label>희망 배송 시간: </label>
+        <input type = "time" name = "timeIn"> <br>
+        <br>
+        <label>배송시요청사항 : <textarea name="info" cols="30" rows="5"></textarea></label>
+        <br>
+        <input type="submit" value="주문하기"> &nbsp;
+    </form>
+</body>
+</html>

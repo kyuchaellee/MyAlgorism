@@ -1,0 +1,43 @@
+#first{
+    background-color: blue;
+}
+
+#first fieldset:first-child{
+    background-color: aqua;
+}
+
+#first fieldset:last-child{
+    background-color: skyblue;
+}
+legend{
+    font-size: 25px;
+    font-weight: bolder;
+    color:red;
+}
+
+.userInfo{
+    color:blue;
+} 
+.userInfo:focus{
+    background-color: gray;
+}
+
+.hover:hover{
+    border-bottom-color: black;
+    color: blue;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    width: 20px;
+    height: 20px;
+}
+
+#myself{
+    background-color: gray;
+    color:blue;
+    font-weight: bold;
+}
+#myself:focus{
+    background-color: white;
+}

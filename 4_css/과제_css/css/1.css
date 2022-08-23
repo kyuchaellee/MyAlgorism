@@ -1,0 +1,60 @@
+table{
+    border:5px solid black;
+    
+}
+
+#month{
+    background-color: red;
+}
+
+#give{
+    background-color: yellowgreen;
+}
+#cut{
+    background-color: green;
+}
+
+.first{
+    background-color: aqua;
+}
+.second{
+    background-color: skyblue;
+}
+.t{
+    border-style: 50px dashed;
+}
+
+#one{
+    background-color: darkorange;
+}
+.one-first{
+    background-color: rgb(125, 97, 63);
+}
+.one-second{
+    background-color: rgb(247, 220, 187);
+}
+
+#two{
+    background-color: blue;
+}
+.two-first{
+    background-color: rgb(38, 38, 148);
+}
+.two-second{
+    background-color: rgb(167, 167, 210);
+}
+
+#three{
+    background-color: blueviolet;
+}
+.three-first{
+    background-color: rgb(105, 46, 160);
+}
+.three-second{
+    background-color: rgb(166, 99, 228);
+}
+
+.other{
+    background-color: black;
+    color:red;
+}

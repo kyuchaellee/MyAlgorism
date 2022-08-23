@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/2.css"
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form method="get">
+       <fieldset  id="first"style="width: 510px;">
+            <form>
+                <fieldset id="first" style="width: 500px;">
+                    <legend>필수 입력 사항</legend>
+                    <label ><strong style="margin-left: 90px; margin-right: 60px;">ID</strong></label><input class="userInfo" type="text" name="userId" size="30" placeholder="아이디 10글자 이내">
+                    <input class="hover" type="submit" value="중복확인"><br>
+
+                    <label><strong style="margin-left: 70px; margin-right: 28px;">비밀번호 </strong>
+                        <input class="userInfo"  type="password" name="userPwd" size="30" placeholder="영문,숫자,특수문자 포함 8자 이상">
+                    </label><br>
+
+                    <label><strong style="margin-left: 50px; margin-right: 11px;">비밀번호 확인 </strong>
+                        <input class="userInfo" type="password" name="userPwd" size="30">
+                    </label><br>
+
+                    <label><strong style="margin-left: 80px; margin-right: 42px;">Email </strong><input class="userInfo" type="email"name="userEmail"size="30"></label>
+                    <select name="userEmail" multiplesize="3">
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="">직접입력</option>
+                    </select>
+                </fieldset>
+
+            </form>
+
+            <form>
+                <fieldset style="width: 500px;">
+                    <legend>추가 정보</legend>
+                    <label>프로필 사진 : </label>
+                    <input type="file" name="uploadfile"><br>
+
+                    <label>성별 : </label>
+                    <label>
+                        <input type="radio" id="male" name="gender" value="M"> 남자
+                    </label>
+            
+                    <input type="radio" id="female" name="gender" value="F">
+                    <label for="female">여자</label><br>
+
+                    <label>생년 월일 :</label>
+                    <input type = "date" name="dateInput" id="dateIn"><br>
+
+
+                    <label>취미</label><br>
+                    <input type="checkbox" id="baseball" name="hobby" value="baseball">
+                    <label for="baseball">야구</label>
+                    <input type="checkbox" id="basketball" name="hobby" value="basketball">
+                    <label for="baseball">농구</label>
+                    <input type="checkbox" id="soccer" name="hobby" value="soccer">
+                    <label for="baseball">축구</label><br>
+                    <input type="checkbox" id="study" name="hobby" value="study">
+                    <label for="baseball">공부</label>
+                    <input type="checkbox" id="music" name="hobby" value="music">
+                    <label for="baseball">음악감상</label><br>
+                    <input type="checkbox" id="etc" name="hobby" value="etc">
+                    <label for="baseball">기타 : </label>
+                    <input type="text" id="etct" name="hobby"><br>
+                    <br>
+                    <label for="myself">자기소개</label><br>
+                    <textarea id="myself" name="info" cols="50" rows="5" style="resize: none;"></textarea>
+
+                </fieldset>
+
+                 
+            </form>
+            <br>
+        <input class="hover" style="margin-left: 20px;" type="submit" value="회원가입"> 
+        <input class="hover" type="reset" value="다시입력">
+        <!-- <input type="button" value="이전으로" onClick="history.go(-1)">  -->
+        <input class="hover" type="button" value="이전으로" onClick="history.go(-1)"> 
+        </fieldset>
+    </form>
+
+</body>
+</html>
