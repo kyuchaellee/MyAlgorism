@@ -34,7 +34,23 @@
 	<button onclick="printMember();">출력</button>
 	
 	<script>
-      
+		let member={
+			name :'',
+			age : 0,
+			address:''
+		};
+		function insertMember(){
+			member = {
+				name : prompt("이름 : "),
+				age : prompt("나이 :"),
+				address : prompt("주소 :")
+			}
+		}
+
+		function printMember(){
+			console.log(member);
+			document.getElementById('print').innerHTML=(`이름 : ${member.name}`+`<br>`+`나이 : ${member.age}`+`<br>`+`주소 : ${member.address}`);
+		}
     </script>
 	
 </body>

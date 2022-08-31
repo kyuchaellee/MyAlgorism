@@ -55,7 +55,25 @@
 		</form>
 	</div>
 	<script>
-	
+		function showDiv(self){
+			if(self.id=='title'){
+				document.getElementById('titleBox').style.display="block";
+			}else{
+				document.getElementById('titleBox').style.display="none";
+			}
+
+			if(self.id=='date'){
+				document.getElementById('dateBox').style.display="block";
+			}else{
+				document.getElementById('dateBox').style.display="none";
+			}
+
+			if(self.id=='writer'){
+				document.getElementById('writerBox').style.display="block";
+			}else{
+				document.getElementById('writerBox').style.display="none";
+			}
+		}
   	</script>
 </body>
 </html>
