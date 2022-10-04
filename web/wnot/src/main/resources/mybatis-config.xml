@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--environment엘리먼트는 트랙잭션 관리와 커넥션 풀링을 위한 환경설정 정보 담음 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="org.mariadb.jdbc.Driver"/>
+                <property name="url" value="jdbc:mariadb://localhost:3307/kiosk"/>
+                <property name="username" value="root"/>
+                <property name="password" value="room1"/>
+            </dataSource>
+
+        </environment>
+    </environments>
+    <mappers>
+        <!-- mapper 엘리먼트는 SQL코드와 매핑정의를 가지고 있는 XML 파일인 mapper의 목록을 지정한다 -->
+        <!-- ~mapper.xml 추가하기-->
+        <mapper resource="org/zerock/w0930/dao/KioskMapper.xml"></mapper>
+    </mappers>
+</configuration>
